@@ -4,7 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MyProjects</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: { sans: ["Roboto", "Arial", "sans-serif"] },
+          extend: {
+            colors: {
+              dark: "#392657",
+              medium: "#502D55",
+              light: "#A178B9",
+            },
+          },
+        },
+      };
+    </script>
+    <title>Portflio Website</title>
   </head>
   <body>
     <!-- HEADER -->
@@ -13,7 +29,7 @@
         class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
       >
         <a
-          href="/Pages/Home/home.html"
+          href="home.html"
           class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
         >
           <img class="p-2 rounded-full" src="/assets/Logo/Logo.png" alt="" />
@@ -22,132 +38,30 @@
         <nav
           class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center"
         >
-          <a class="mr-5 hover:text-purple-800" href="/Pages/Home/home.html"
-            >HOME</a
-          >
-          <a class="mr-5 hover:text-purple-800" href="/Pages/About/about.html"
-            >ABOUT</a
-          >
-          <a
-            class="mr-5 hover:text-purple-800"
-            href="/Pages/MyProjects/myProject.html"
+          <a class="mr-5 hover:text-purple-800" href="home.html">HOME</a>
+          <a class="mr-5 hover:text-purple-800" href="about.html">ABOUT</a>
+          <a class="mr-5 hover:text-purple-800" href="myProject.html"
             >MY PROJECTS</a
           >
-          <a
-            class="mr-5 hover:text-purple-800"
-            href="/Pages/Contact/contact.html"
-            >CONTACT</a
-          >
+          <a class="mr-5 hover:text-purple-800" href="contact.html">CONTACT</a>
         </nav>
       </div>
     </header>
-    <!-- My Project SECTION -->
-    <section class="text-gray-600 body-font">
-      <div class="container px-5 py-24 mx-auto">
-        <div class="flex flex-col">
-          <div class="h-1 bg-gray-200 rounded overflow-hidden">
-            <div class="w-24 h-full bg-purple-800"></div>
-          </div>
-          <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
-            <h1
-              class="sm:w-2/5 text-gray-900 font-medium title-font text-4xl mb-2 sm:mb-0"
-            >
-              My Projects
-            </h1>
-          </div>
-        </div>
-        <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-          <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-            <div class="rounded-lg h-64 overflow-hidden">
-              <img
-                alt="content"
-                class="object-cover object-center h-full w-full"
-                src="/assets/Projects/Project1.png"
-              />
-            </div>
-            <h2 class="text-xl font-medium title-font text-purple-500 mt-5">
-              SARAH Z CLOTHING
-            </h2>
-            <p class="text-base leading-relaxed mt-2">
-              Store Development, Digital Marketing, Branding, External
-              Integration.
-            </p>
-            <a class="text-indigo-500 inline-flex items-center mt-3"
-              >Learn More
-              <svg
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                class="w-4 h-4 ml-2"
-                viewBox="0 0 24 24"
-              >
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
-              </svg>
-            </a>
-          </div>
-          <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-            <div class="rounded-lg h-64 overflow-hidden">
-              <img
-                alt="content"
-                class="object-cover object-center h-full w-full"
-                src="/assets/Projects/Project2.png"
-              />
-            </div>
-            <h2 class="text-xl font-medium title-font text-purple-500 mt-5">
-              INSPIRED PERFUMES
-            </h2>
-            <p class="text-base leading-relaxed mt-2">
-              Store Development, Digital Marketing, Branding, External
-              Integration.
-            </p>
-            <a class="text-indigo-500 inline-flex items-center mt-3"
-              >Learn More
-              <svg
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                class="w-4 h-4 ml-2"
-                viewBox="0 0 24 24"
-              >
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
-              </svg>
-            </a>
-          </div>
-          <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-            <div class="rounded-lg h-64 overflow-hidden">
-              <img
-                alt="content"
-                class="object-cover object-center h-full w-full"
-                src="/assets/Projects/Project3.png"
-              />
-            </div>
-            <h2 class="text-xl font-medium title-font text-purple-500 mt-5">
-              MEERZARI CLOTHING
-            </h2>
-            <p class="text-base leading-relaxed mt-2">
-              Store Development, Digital Marketing, Branding, External
-              Integration.
-            </p>
-            <a class="text-indigo-500 inline-flex items-center mt-3"
-              >Learn More
-              <svg
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                class="w-4 h-4 ml-2"
-                viewBox="0 0 24 24"
-              >
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
-              </svg>
-            </a>
-          </div>
-        </div>
+    <section class="bg-dark pt-9 pb-9">
+      <div class="mt-[50px] px-[80]">
+        <h1
+          class="text-light text-center tracking-[20px] text-[90px] font-bold"
+        >
+          SUBHAN KHAN
+        </h1>
+        <h2
+          class="font-sans text-white tracking-[0.1em] text-right text-[30px]"
+        >
+          WEB AND APP DEVELOPER
+        </h2>
+      </div>
+      <div class="flex justify-center ml-10 mt-[-125px] mb-10">
+        <img class="w-[60vw]" src="/assets/Home/home.png" alt="" />
       </div>
     </section>
     <!-- FOOTER -->
@@ -334,6 +248,5 @@
         </div>
       </div>
     </footer>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
   </body>
 </html>
